@@ -7,9 +7,24 @@
         * {
           text-align: center;
         }
+        a {
+          text-decoration: none;
+          color: darkred;
+        }
+        a img {
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
   %body
     %h1 Blackacre Labs
+    %p A Texas Nonprofit Corporation
     %img{:src => '/image/logo.png'}
+    %p
+      %img{:src => '/image/pdficon_small.png'}
+      %a{:href => '/doc/Certificate%20of%20Formation.pdf'}
+        Certiciate of Formation
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-33784585-1']);
