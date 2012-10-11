@@ -17,6 +17,12 @@
         a:hover {
           text-decoration: underline;
         }
+        #forkme {
+          position: absolute;
+          top: 0;
+          right: 0;
+          border: 0;
+        }
   %body
     %h1 Blackacre Labs
     %p A Texas Nonprofit Corporation
@@ -25,6 +31,8 @@
       %img{:src => '/image/pdficon_small.png'}
       %a{:href => '/doc/Certificate%20of%20Formation.pdf'}
         Certiciate of Formation
+    %a{:href => "https://github.com/BlackacreLabs"}
+      %img#forkme{:src => "https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png", :alt => "Fork me on GitHub"}
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-33784585-1']);
